@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hôtels — Hôtels Luxe Maroc</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-cream">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-cream shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Hôtels Luxe Maroc</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav2"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNav2">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link active" href="listings.html">Hôtels</a></li>
+          <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="pt-5 mt-5">
+    <div class="container py-5">
+      <div class="row g-4">
+        <!-- Filters column -->
+       
+
+        <!-- Listings -->
+        <section class="col-lg-9">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="h5 mb-0 heading-serif">Résultats</h2>
+            <div class="text-muted small">12 hôtels • Filtrez pour affiner</div>
+          </div>
+
+          <div class="row g-4" id="listingsGrid">
+            <!-- Reuse same cards (12) from index but with larger layout -->
+            <!-- Each card has same data attributes for filtering -->
+            <!-- Example card (repeat for all hotels) -->
+            <!-- 1 -->
+            <div class="col-12 col-md-6 animate-card" data-delay="0">
+              <div class="card hotel-card-lg h-100" data-city="Marrakech" data-price="2500" data-rating="4.9">
+                <div class="row g-0">
+                  <div class="col-5">
+                    <img src="marrakech.jpeg" class="img-fluid h-100 w-100 object-cover" alt="">
+                  </div>
+                  <div class="col-7">
+                    <div class="card-body d-flex flex-column">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title mb-1">Riad Royal Marrakech</h5>
+                        <div class="badge bg-terra text-white align-self-start">4.9★</div>
+                      </div>
+                      <p class="text-muted small mb-2">Marrakech • Centre-ville</p>
+                      <p class="text-muted small flex-grow-1">Magnifique riad centenaire avec patio, piscine et service personnalisé.</p>
+                      <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="fw-bold">2500 dh / nuit</div>
+                        <div>
+                          <a class="btn btn-outline-terra btn-sm me-2" href="details.html?hotel=1">Voir détails</a>
+                          <a class="btn btn-terra btn-sm" href="Réserver.html?hotel=1">Réserver</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- (Repeat similar structure for hotels 2..12) -->
+            <!-- For brevity in code delivery these cards are included exactly like the index file but sized for listings -->
+            <!-- 2 -->
+            <div class="col-12 col-md-6 animate-card" data-delay="50">
+              <div class="card hotel-card-lg h-100" data-city="Casablanca" data-price="1800" data-rating="4.7">
+                <div class="row g-0">
+                  <div class="col-5">
+                    <img src="casa.jpg" class="img-fluid h-100 w-100 object-cover" alt="">
+                  </div>
+                  <div class="col-7">
+                    <div class="card-body d-flex flex-column">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title mb-1">Hôtel Marina Casablanca</h5>
+                        <div class="badge bg-terra text-white align-self-start">4.7★</div>
+                      </div>
+                      <p class="text-muted small mb-2">Casablanca • Corniche</p>
+                      <p class="text-muted small flex-grow-1">Hôtel moderne face à la mer avec restaurant gastronomique.</p>
+                      <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="fw-bold">1800 dh / nuit</div>
+                        <div>
+                          <a class="btn btn-outline-terra btn-sm me-2" href="details.html?hotel=2">Voir détails</a>
+                          <a class="btn btn-terra btn-sm" href="Réserver.html?hotel=2">Réserver</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="col-12 col-md-6 animate-card" data-delay="100">
+              <div class="card hotel-card-lg h-100" data-city="Agadir" data-price="2200" data-rating="4.8">
+                <div class="row g-0">
+                  <div class="col-5">
+                    <img src="Agadir.jpg" class="img-fluid h-100 w-100 object-cover" alt="">
+                  </div>
+                  <div class="col-7">
+                    <div class="card-body d-flex flex-column">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title mb-1">Resort Plage Agadir</h5>
+                        <div class="badge bg-terra text-white align-self-start">4.8★</div>
+                      </div>
+                      <p class="text-muted small mb-2">Agadir • Bord de mer</p>
+                      <p class="text-muted small flex-grow-1">Resort avec spa, piscines et accès direct à la plage.</p>
+                      <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="fw-bold">2200 dh / nuit</div>
+                        <div>
+                          <a class="btn btn-outline-terra btn-sm me-2" href="details.html?hotel=3">Voir détails</a>
+                          <a class="btn btn-terra btn-sm" href="Réserver.html?hotel=3">Réserver</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="col-12 col-md-6 animate-card" data-delay="150">
+              <div class="card hotel-card-lg h-100" data-city="Fès" data-price="2800" data-rating="4.9">
+                <div class="row g-0">
+                  <div class="col-5">
+                    <img src="fes.jpg" class="img-fluid h-100 w-100 object-cover" alt="">
+                  </div>
+                  <div class="col-7">
+                    <div class="card-body d-flex flex-column">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title mb-1">Palais Impérial Fès</h5>
+                        <div class="badge bg-terra text-white align-self-start">4.9★</div>
+                      </div>
+                      <p class="text-muted small mb-2">Fès • Médina</p>
+                      <p class="text-muted small flex-grow-1">Palais historique transformé en hôtel de grand standing.</p>
+                      <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="fw-bold">2800 dh / nuit</div>
+                        <div>
+                          <a class="btn btn-outline-terra btn-sm me-2" href="details.html?hotel=4">Voir détails</a>
+                          <a class="btn btn-terra btn-sm" href="Réserver.html?hotel=4">Réserver</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="col-12 col-md-6 animate-card" data-delay="200">
+              <div class="card hotel-card-lg h-100" data-city="Rabat" data-price="1600" data-rating="4.6">
+                <div class="row g-0">
+                  <div class="col-5">
+                    <img src="rabat.jpg" class="img-fluid h-100 w-100 object-cover" alt="">
+                  </div>
+                  <div class="col-7">
+                    <div class="card-body d-flex flex-column">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title mb-1">Hôtel Capitale Rabat</h5>
+                        <div class="badge bg-terra text-white align-self-start">4.6★</div>
+                      </div>
+                      <p class="text-muted small mb-2">Rabat • Centre</p>
+                      <p class="text-muted small flex-grow-1">Hôtel confortable avec excellent rapport qualité/prix.</p>
+                      <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="fw-bold">1600 dh / nuit</div>
+                        <div>
+                          <a class="btn btn-outline-terra btn-sm me-2" href="details.html?hotel=5">Voir détails</a>
+                          <a class="btn btn-terra btn-sm" href="Réserver.html?hotel=5">Réserver</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="col-12 col-md-6 animate-card" data-delay="250">
+              <div class="card hotel-card-lg h-100" data-city="Tanger" data-price="2100" data-rating="4.7">
+                <div class="row g-0">
+                  <div class="col-5">
+                    <img src="tanger.jpg" class="img-fluid h-100 w-100 object-cover" alt="">
+                  </div>
+                  <div class="col-7">
+                    <div class="card-body d-flex flex-column">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title mb-1">Villa Méditerranée Tanger</h5>
+                        <div class="badge bg-terra text-white align-self-start">4.7★</div>
+                      </div>
+                      <p class="text-muted small mb-2">Tanger • Vue mer</p>
+                      <p class="text-muted small flex-grow-1">Villa élégante proche du port avec terrasse panoramique.</p>
+                      <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="fw-bold">2100 dh / nuit</div>
+                        <div>
+                          <a class="btn btn-outline-terra btn-sm me-2" href="details.html?hotel=6">Voir détails</a>
+                          <a class="btn btn-terra btn-sm" href="Réserver.html?hotel=6">Réserver</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="col-12 col-md-6 animate-card" data-delay="300">
+              <div class="card hotel-card-lg h-100" data-city="Essaouira" data-price="1900" data-rating="4.8">
+                <div class="row g-0">
+                  <div class="col-5">
+                    <img src="Essaouira.jpg" class="img-fluid h-100 w-100 object-cover" alt="">
+                  </div>
+                  <div class="col-7">
+                    <div class="card-body d-flex flex-column">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title mb-1">Riad Océan Essaouira</h5>
+                        <div class="badge bg-terra text-white align-self-start">4.8★</div>
+                      </div>
+                      <p class="text-muted small mb-2">Essaouira • Médina</p>
+                      <p class="text-muted small flex-grow-1">Riad raffiné près du port, idéal pour photographie et détente.</p>
+                      <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="fw-bold">1900 dh / nuit</div>
+                        <div>
+                          <a class="btn btn-outline-terra btn-sm me-2" href="details.html?hotel=7">Voir détails</a>
+                          <a class="btn btn-terra btn-sm" href="Réserver.html?hotel=7">Réserver</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="col-12 col-md-6 animate-card" data-delay="350">
+              <div class="card hotel-card-lg h-100" data-city="Chefchaouen" data-price="1400" data-rating="4.8">
+                <div class="row g-0">
+                  <div class="col-5">
+                    <img src="chefchaouen.jpg" class="img-fluid h-100 w-100 object-cover" alt="">
+                  </div>
+                  <div class="col-7">
+                    <div class="card-body d-flex flex-column">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title mb-1">Maison Bleue Chefchaouen</h5>
+                        <div class="badge bg-terra text-white align-self-start">4.8★</div>
+                      </div>
+                      <p class="text-muted small mb-2">Chefchaouen • Centre</p>
+                      <p class="text-muted small flex-grow-1">Charmante maison d'hôtes aux ruelles bleues emblématiques.</p>
+                      <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="fw-bold">1400 dh / nuit</div>
+                        <div>
+                          <a class="btn btn-outline-terra btn-sm me-2" href="details.html?hotel=8">Voir détails</a>
+                          <a class="btn btn-terra btn-sm" href="Réserver.html?hotel=8">Réserver</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 9 -->
+            <div class="col-12 col-md-6 animate-card" data-delay="400">
+              <div class="card hotel-card-lg h-100" data-city="Ouarzazate" data-price="2300" data-rating="4.7">
+                <div class="row g-0">
+                  <div class="col-5">
+                    <img src="ourzazate.jpg" class="img-fluid h-100 w-100 object-cover" alt="">
+                  </div>
+                  <div class="col-7">
+                    <div class="card-body d-flex flex-column">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title mb-1">Kasbah Désert Ouarzazate</h5>
+                        <div class="badge bg-terra text-white align-self-start">4.7★</div>
+                      </div>
+                      <p class="text-muted small mb-2">Ouarzazate • Proche désert</p>
+                      <p class="text-muted small flex-grow-1">Kasbah traditionnelle au cœur des paysages sahariens.</p>
+                      <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="fw-bold">2300 dh / nuit</div>
+                        <div>
+                          <a class="btn btn-outline-terra btn-sm me-2" href="details.html?hotel=9">Voir détails</a>
+                          <a class="btn btn-terra btn-sm" href="Réserver.html?hotel=9">Réserver</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 10 -->
+            <div class="col-12 col-md-6 animate-card" data-delay="450">
+              <div class="card hotel-card-lg h-100" data-city="Meknès" data-price="1500" data-rating="4.6">
+                <div class="row g-0">
+                  <div class="col-5">
+                    <img src="maknes.jpg" class="img-fluid h-100 w-100 object-cover" alt="">
+                  </div>
+                  <div class="col-7">
+                    <div class="card-body d-flex flex-column">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title mb-1">Hôtel Impérial Meknès</h5>
+                        <div class="badge bg-terra text-white align-self-start">4.6★</div>
+                      </div>
+                      <p class="text-muted small mb-2">Meknès • Proche sites</p>
+                      <p class="text-muted small flex-grow-1">Hôtel historique idéal pour découvrir la région.</p>
+                      <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="fw-bold">1500 dh / nuit</div>
+                        <div>
+                          <a class="btn btn-outline-terra btn-sm me-2" href="details.html?hotel=10">Voir détails</a>
+                          <a class="btn btn-terra btn-sm" href="Réserver.html?hotel=10">Réserver</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 11 -->
+            <div class="col-12 col-md-6 animate-card" data-delay="500">
+              <div class="card hotel-card-lg h-100" data-city="Merzouga" data-price="3200" data-rating="5.0">
+                <div class="row g-0">
+                  <div class="col-5">
+                    <img src="sahara.jpg" class="img-fluid h-100 w-100 object-cover" alt="">
+                  </div>
+                  <div class="col-7">
+                    <div class="card-body d-flex flex-column">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title mb-1">Camp Luxe Sahara Merzouga</h5>
+                        <div class="badge bg-terra text-white align-self-start">5.0★</div>
+                      </div>
+                      <p class="text-muted small mb-2">Merzouga • Désert</p>
+                      <p class="text-muted small flex-grow-1">Expérience campée de luxe au cœur des dunes.</p>
+                      <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="fw-bold">3200 dh / nuit</div>
+                        <div>
+                          <a class="btn btn-outline-terra btn-sm me-2" href="details.html?hotel=11">Voir détails</a>
+                          <a class="btn btn-terra btn-sm" href="Réserver.html?hotel=11">Réserver</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 12 -->
+            <div class="col-12 col-md-6 animate-card" data-delay="550">
+              <div class="card hotel-card-lg h-100" data-city="El Jadida" data-price="2000" data-rating="4.7">
+                <div class="row g-0">
+                  <div class="col-5">
+                    <img src="el jadida.jpg" class="img-fluid h-100 w-100 object-cover" alt="">
+                  </div>
+                  <div class="col-7">
+                    <div class="card-body d-flex flex-column">
+                      <div class="d-flex justify-content-between">
+                        <h5 class="card-title mb-1">Resort Atlantique El Jadida</h5>
+                        <div class="badge bg-terra text-white align-self-start">4.7★</div>
+                      </div>
+                      <p class="text-muted small mb-2">El Jadida • Bord de mer</p>
+                      <p class="text-muted small flex-grow-1">Complexe familial avec plages privées et activités.</p>
+                      <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="fw-bold">2000 dh / nuit</div>
+                        <div>
+                          <a class="btn btn-outline-terra btn-sm me-2" href="details.html?hotel=12">Voir détails</a>
+                          <a class="btn btn-terra btn-sm" href="Réserver.html?hotel=12">Réserver</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- End grid -->
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer id="footer" class="py-4 bg-cream border-top mt-5">
+    <div class="container text-center small text-muted">© <span id="year2"></span> Hôtels Luxe Maroc</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
